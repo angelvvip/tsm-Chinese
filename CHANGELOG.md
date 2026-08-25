@@ -7,25 +7,34 @@
 - 新版英文固定界面键：2529 项，中文覆盖：100%
 - 从旧版中文补回：133 项
 - 依据新版英文新译：101 项
-- 已讨论后修改：54 项
+- 已讨论后修改：66 项
 - 英中占位符不一致：0 项
 - 服务器/游戏运行时任务描述及资源名称：完整保留，共 2433 项
 - 格式规范化：重新序列化为有效 JSON；原文件重复的空键和 `Continue with the save file...` 各保留最后一个有效值。
 
 ## 本轮新增修改
 
-| 最终行 | 英文键 | v4 翻译 | 当前翻译 |
+| 最终行 | 英文键 | 修改前 | 当前翻译 |
 | ---: | --- | --- | --- |
-| 3 | _meta.name | angel v4 | Chinese (Simplified) |
-| 4 | _meta.code | zh | zh-CN |
-| 918 | in {} | 在 {} 中 | 还有 {} |
+| 83 | Affinity | 亲和力 | 同图稳定度 |
+| 84 | Affinity Warning | 亲和力警告 | 串线警告 |
+| 162 | Auto Eden | 自动伊甸 | 自动献祭(高危) |
+| 163 | Auto Play Sheets | 自动播放乐谱 | 自动弹奏乐谱 |
+| 516 | Disable Spirit Gates | 禁用先祖之门 | 无视星之门限制 |
+| 652 | Everything the mod can do is in here - every switch, every one-shot, every quick warp. Pick one and press the key you want. | 模组能做的所有事情都在这里——每个开关、每个一次性操作、每个快速传送。选择一个并按下您想要的按键。 | 模组能做的所有事情都在这里——每个开关、每个一次性操作、每个快捷传送。选择一个并按下您想要的按键。 |
+| 1401 | Position | 位置 | 坐标传送 |
+| 1419 | Prevent Session Split | 防止会话分裂 | 防止串线 |
+| 1470 | Quick | 快速 | 快捷传送 |
+| 1493 | Re-collect Afterwards | 之后重新收集 | 结束后刷满(光翼) |
+| 1649 | Run Eden now? | 立即自动跑伊甸？ | 要立即开始自动献祭吗？ |
+| 1739 | Session | 会话 | 联机 |
+| 1740 | Session actions | 会话操作 | 联机操作 |
 
-- `_meta.name` 改为纯英文 `Chinese (Simplified)`，确保中文字体加载前语言选项仍可辨认。
-- `_meta.code` 改为 `zh-CN`，用于明确标识简体中文，并为未来繁体语言包留出区分空间。
-- `_meta.font` 继续使用 `Default.ttf`，不捆绑额外字体。
-- 近期事件倒计时 `in {}` 从“在 {} 中”改为“还有 {}”。
-- v4 已确认的 `Automation`→“跑图辅助”、独立键 `Wax`→“自动跑图(慎)”、`Home`→“回家”与 `Actions`→“动作”全部保留。
-- `{fps}`、`{ping}` 等 Discord 状态变量继续保留社区译者加入的原始扩展翻译，本版不删除。
+- `Session` 菜单采用“联机”，用于涵盖服务器连接和当前多人联机；具体场景副本仍按语境理解为分线或房间。
+- `Quick` 与 `Position` 均为唯一独立键；`Quick actions` 和 `Location` 未修改。
+- `Affinity` 改为“同图稳定度”，以便玩家理解数值降低代表更容易串线；相关警告改为“串线警告”。
+- 自动献祭及献祭后的光翼收集使用功能性翻译，并明确标注高风险。
+- `Disable Spirit Gates` 采用国服玩家熟悉的“星之门”，并译为“无视星之门限制”，避免“禁用门”产生反向理解。
 
 ## 已讨论后修改
 
@@ -38,7 +47,11 @@
 | 68 | Actions | 操作 | 动作 | 已讨论确认 |
 | 79 | Adds all known map shrine unlock keys. | 添加所有已知的地图神坛解锁钥匙。 | 向服务器发送解锁数据，以解锁所有已知的地图神坛。 | 已讨论确认 |
 | 80 | Adds all known music sheet unlock keys. | 添加所有已知的乐谱解锁钥匙。 | 向服务器发送解锁数据，以解锁所有已知的乐谱。 | 已讨论确认 |
+| 83 | Affinity | 亲和力 | 同图稳定度 | 已讨论确认 |
+| 84 | Affinity Warning | 亲和力警告 | 串线警告 | 已讨论确认 |
 | 154 | Aurora | 极光 | AURORA | 已讨论确认 |
+| 162 | Auto Eden | 自动伊甸 | 自动献祭(高危) | 已讨论确认 |
+| 163 | Auto Play Sheets | 自动播放乐谱 | 自动弹奏乐谱 | 已讨论确认 |
 | 171 | Automation | 自动化 | 跑图辅助 | 已讨论确认 |
 | 175 | Aviary Village | 飞鸟村 | 云巢 | 已讨论确认 |
 | 176 | Aviary Village or Village of Dreams | 飞鸟村或梦想村 | 云巢或圆梦村 | 已讨论确认 |
@@ -46,7 +59,9 @@
 | 255 | Butterfly Fields | 蝴蝶田 | 蝴蝶平原 | 已讨论确认 |
 | 292 | Carry | 背负 | 肩背 | 已讨论确认 |
 | 498 | Developer overlays | 开发者菜单 | 开发者调试显示 | 已讨论确认 |
+| 516 | Disable Spirit Gates | 禁用先祖之门 | 无视星之门限制 | 已讨论确认 |
 | 525 | Discord Rich Presence | Discord 富活动状态 | Discord 游戏活动状态 | 已讨论确认 |
+| 652 | Everything the mod can do is in here - every switch, every one-shot, every quick warp. Pick one and press the key you want. | 模组能做的所有事情都在这里——每个开关、每个一次性操作、每个快速传送。选择一个并按下您想要的按键。 | 模组能做的所有事情都在这里——每个开关、每个一次性操作、每个快捷传送。选择一个并按下您想要的按键。 | 已讨论确认 |
 | 674 | Fast Meditate | 快速传送 | 快速冥想(含回家) | 已讨论确认 |
 | 819 | Grow | 生长 | 变大 | 已讨论确认 |
 | 847 | Hidden Forest | 雨林（森林） | 雨林 | 已讨论确认 |
@@ -56,10 +71,16 @@
 | 1310 | Overlay Scale | 覆盖层比例 | 悬浮显示缩放 | 已讨论确认 |
 | 1311 | Overlays | 叠加层 | 悬浮显示 | 已讨论确认 |
 | 1344 | Picking a track on the Music tab sets it as the background music for every player in the area, not just you. Only tracks whose audio bank is already loaded on their machine will play - in practice the Aurora set travels and most level tracks do not. | 在“音乐”选项卡中选择一首曲目，会将其设为该区域所有玩家的背景音乐，而不仅仅是你自己。只有那些音频库已在他们本机加载的曲目才会播放——实际上，Aurora 曲目集会随玩家走（即随处可播），而大多数关卡曲目则不会。 | 在“音乐”选项卡中选择一首曲目，会将其设为该区域所有玩家的背景音乐，而不仅仅是你自己。只有那些音频库已在他们本机加载的曲目才会播放——实际上，AURORA 曲目集会随玩家走（即随处可播），而大多数关卡曲目则不会。 | 已讨论确认 |
+| 1401 | Position | 位置 | 坐标传送 | 已讨论确认 |
 | 1408 | Prairie Cave | 草原洞穴 | 幽光山洞 | 已讨论确认 |
 | 1409 | Prairie Heights | 草原高地 | 云峰 | 已讨论确认 |
 | 1410 | Prairie Village | 草原村庄 | 云中仙乡（三塔图） | 已讨论确认 |
+| 1419 | Prevent Session Split | 防止会话分裂 | 防止串线 | 已讨论确认 |
+| 1470 | Quick | 快速 | 快捷传送 | 已讨论确认 |
+| 1493 | Re-collect Afterwards | 之后重新收集 | 结束后刷满(光翼) | 已讨论确认 |
 | 1605 | Report the mod overlay's frame rate. | 报告模组叠加层的帧率。 | 显示模组悬浮显示的帧率。 | 已讨论确认 |
+| 1739 | Session | 会话 | 联机 | 已讨论确认 |
+| 1740 | Session actions | 会话操作 | 联机操作 | 已讨论确认 |
 | 1799 | Shrink | 缩小 | 变小 | 已讨论确认 |
 | 1894 | Steps | 步数 | 步骤 | 已讨论确认 |
 | 1969 | Temple of the Prairie | 草原神庙 | 云野神殿 | 已讨论确认 |
@@ -228,7 +249,7 @@
 | 1615 | Reset rotation | 重置旋转角度 | 旧版中文继承 |
 | 1645 | Rotate handles | 旋转操控手柄 | 旧版中文继承 |
 | 1646 | Rules | 拦截规则 | 旧版中文继承 |
-| 1649 | Run Eden now? | 立即自动跑伊甸？ | 旧版中文继承 |
+| 1649 | Run Eden now? | 要立即开始自动献祭吗？ | 旧版中文校正后继承 |
 | 1654 | Running | 运行中 | 旧版中文继承 |
 | 1656 | Sad | 难过 | 旧版中文继承 |
 | 1658 | Sassy | 俏皮 | 旧版中文继承 |
