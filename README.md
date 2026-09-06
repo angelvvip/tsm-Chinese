@@ -1,9 +1,9 @@
 # That Sky Mod 简体中文社区翻译
 
-这是 That Sky Mod（TSM）PC 版的非官方简体中文社区翻译，当前适配 **TSM v0.50.0**。
+这是 That Sky Mod（TSM）PC 版的非官方简体中文社区翻译，当前适配 **TSM v0.53.0**。
 
 - 安装文件：[zh-cn.json](TSM%20Resources/i18n/zh-cn.json)
-- 完整修改记录：[CHANGELOG.md](CHANGELOG.md)
+- 更新记录：[CHANGELOG.md](CHANGELOG.md)
 - 贡献与致谢：[CREDITS.md](CREDITS.md)
 
 本项目只提供语言文件和中文说明，不包含 TSM 程序本体。TSM 的下载、更新和 Discord 授权仍以作者 Trinity 的官方频道及 App 为准。
@@ -66,12 +66,13 @@
 | 英文 | 当前翻译 | 处理理由 |
 | --- | --- | --- |
 | `Automation` | 跑图辅助 | 比“自动化”更容易理解该页功能 |
-| `Wax` | 自动跑图(慎) | 该独立入口实际对应全自动收集烛火，并提示风险 |
+| `Wax` | 烛火 | 该键也用于钱包中的烛火数量，采用可复用的中性译名 |
+| `Auto Eden` | 自动献祭 | 比“自动伊甸”更准确地说明实际功能 |
+| `Take Instance Control` | 抢占房主权限 | 结合玩家习惯说明其实际作用 |
+| `Session` | 联机 | 比“会话”更符合多人联机语境 |
 | `Overlay` | 悬浮显示 | 比“叠加层”更符合中文界面习惯 |
 | `Discord Rich Presence` | Discord 游戏活动状态 | 避免生硬直译，同时与普通状态区分 |
 | `in {}` | 还有 {} | 符合近期事件倒计时的显示语境 |
-
-`自动跑图(慎)` 中的“慎”是翻译者提供的风险提示，不代表任何安全保证。
 
 ## 反馈与参与
 
