@@ -18,9 +18,21 @@ if language.get("_meta") != expected_meta:
 
 required = {
     "Actions": "动作",
+    "Affinity": "同图稳定度",
+    "Affinity Warning": "串线警告",
     "Automation": "跑图辅助",
+    "Auto Eden": "自动献祭",
+    "Auto Play Sheets": "自动弹奏乐谱",
+    "Disable Spirit Gates": "无视星之门限制",
     "Home": "回家",
-    "Wax": "自动跑图(慎)",
+    "Position": "坐标传送",
+    "Prevent Session Split": "防止串线",
+    "Quick": "快捷传送",
+    "Re-collect Afterwards": "结束后刷满(光翼)",
+    "Run Eden now?": "要立即开始自动献祭吗？",
+    "Session": "联机",
+    "Session actions": "联机操作",
+    "Wax": "烛火",
     "in {}": "还有 {}",
 }
 for key, expected in required.items():
